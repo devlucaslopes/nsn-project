@@ -1,1 +1,5 @@
-export const App = () => <h1>NSN</h1>
+export const App = () => (
+  <>
+    <h1>NSN</h1>
+  </>
+)
