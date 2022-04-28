@@ -28,5 +28,10 @@ export const GlobalStyles = createGlobalStyle`
       font-family: ${theme.fonts.family.headings};
       font-weight: normal;
     }
+
+    svg,
+    img {
+      width: 100%;
+    }
   `}
 `
