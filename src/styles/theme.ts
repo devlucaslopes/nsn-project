@@ -40,4 +40,4 @@ export const theme = {
     xxlarge: '4.8rem',
     huge: '6.4rem'
   }
-}
+} as const
