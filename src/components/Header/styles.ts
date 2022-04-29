@@ -47,12 +47,17 @@ export const Navigation = styled.nav`
       gap: ${theme.spacings.xlarge};
 
       a {
+        white-space: nowrap;
         transition: all 0.3s ease;
 
         &:hover {
           color: ${theme.colors.primary['300']};
         }
       }
+    }
+
+    > div {
+      width: 16rem;
     }
 
     ${media.greaterThan('large')`
