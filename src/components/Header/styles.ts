@@ -15,12 +15,20 @@ export const Wrapper = styled.div`
 `
 
 export const LogoWrapper = styled.div`
-  width: 10rem;
-  height: 2rem;
+  width: 12rem;
+  height: auto;
   margin: 0 auto;
+
+  ${media.greaterThan('medium')`
+    width: 14rem;
+  `}
 
   ${media.greaterThan('large')`
     margin: 0;
+  `}
+
+  ${media.greaterThan('huge')`
+    width: 16rem;
   `}
 `
 
