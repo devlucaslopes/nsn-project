@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     padding: 0 ${theme.spacings.normal};
 
-    ${media.greaterThan('large')`
+    ${media.greaterThan('huge')`
       padding: 0;
     `}
   `}
