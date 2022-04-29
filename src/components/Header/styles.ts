@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 
     ${media.greaterThan('large')`
       justify-content: space-between;
+      padding: ${theme.spacings.large} 0;
     `}
   `}
 `
@@ -44,6 +45,14 @@ export const Navigation = styled.nav`
       display: flex;
       align-items: center;
       gap: ${theme.spacings.xlarge};
+
+      a {
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: ${theme.colors.primary['300']};
+        }
+      }
     }
 
     ${media.greaterThan('large')`
