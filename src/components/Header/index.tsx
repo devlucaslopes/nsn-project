@@ -29,7 +29,9 @@ export const Header = () => {
           </li>
         </ul>
 
-        <Button>Entrar</Button>
+        <div>
+          <Button href="#">Entrar</Button>
+        </div>
       </Navigation>
     </Wrapper>
   )
