@@ -33,5 +33,14 @@ export const GlobalStyles = createGlobalStyle`
     img {
       width: 100%;
     }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: ${theme.colors.white};
+    }
   `}
 `
