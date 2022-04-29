@@ -1,5 +1,6 @@
 import { FiMenu } from 'react-icons/fi'
 
+import { Button } from '../Button'
 import { Logo } from '../Logo'
 
 import { LogoWrapper, MenuButton, Wrapper, Navigation } from './styles'
@@ -27,6 +28,8 @@ export const Header = () => {
             <a href="#">Lojinha</a>
           </li>
         </ul>
+
+        <Button>Entrar</Button>
       </Navigation>
     </Wrapper>
   )

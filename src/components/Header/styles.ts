@@ -56,7 +56,9 @@ export const Navigation = styled.nav`
     }
 
     ${media.greaterThan('large')`
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: ${theme.spacings.huge};
     `}
   `}
 `
