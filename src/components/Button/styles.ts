@@ -9,6 +9,7 @@ export const Btn = styled.a`
     text-align: center;
     font-size: ${theme.fonts.sizes.medium};
     color: ${theme.colors.black};
+    cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
