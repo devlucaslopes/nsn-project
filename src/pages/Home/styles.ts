@@ -104,7 +104,7 @@ export const NextSection = styled.div`
     right: 0;
 
     a {
-      z-index: 1;
+      z-index: ${theme.layers.overlay};
       display: flex;
       flex-direction: column;
       align-items: center;

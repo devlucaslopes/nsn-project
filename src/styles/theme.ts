@@ -39,5 +39,10 @@ export const theme = {
     xlarge: '3.2rem',
     xxlarge: '4.8rem',
     huge: '6.4rem'
+  },
+  layers: {
+    base: '0',
+    overlay: '1',
+    alwaysOnTop: '2'
   }
 } as const
