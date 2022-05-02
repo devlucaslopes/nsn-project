@@ -91,3 +91,29 @@ export const CallToActionWrapper = styled.div`
     `}
   `}
 `
+
+export const NextSection = styled.div`
+  ${({ theme }) => css`
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 3.2rem;
+    left: 0;
+    right: 0;
+
+    a {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: ${theme.colors.gray['100']};
+      cursor: pointer;
+    }
+
+    ${media.greaterThan('large')`
+      display: none;
+    `}
+  `}
+`
