@@ -1,4 +1,7 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
+import media from 'styled-media-query'
+
+import * as ContainerStyles from '../../components/Container/styles'
 
 export const Hero = styled.main`
   height: 100vh;
@@ -19,12 +22,72 @@ const fadeIn = keyframes`
 
 export const HeroCircleWrapper = styled.div`
   position: absolute;
-  width: 50%;
-  right: 0;
-  top: 0;
+  width: 150%;
+  height: 100%;
+  left: -30%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  ${media.greaterThan('large')`
+    position: absolute;
+    width: 50%;
+    left: auto;
+    right: 0;
+    top: 0;
+    transform: translateY(0);
+  `}
 
   #box-circle {
+    fill-opacity: 0.1;
+    transform: scale(0.5);
     transform-origin: 50% 50%;
-    animation: ${fadeIn} 3s ease-in-out alternate infinite;
+    animation: ${fadeIn} 7s ease 3s alternate infinite;
   }
+`
+
+export const CallToActionWrapper = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+      font-size: ${theme.fonts.sizes.h4};
+    }
+
+    p {
+      font-size: ${theme.fonts.sizes.medium};
+      margin: ${theme.spacings.medium} 0 ${theme.spacings.xlarge};
+
+      span {
+        color: ${theme.colors.primary['300']};
+      }
+    }
+
+    img {
+      display: none;
+      width: 48rem;
+      height: auto;
+    }
+
+    ${ContainerStyles.Wrapper} {
+      display: flex;
+      align-items: center;
+      gap: ${`calc(${theme.spacings.huge} * 2)`};
+    }
+
+    ${media.greaterThan('large')`
+      h1 {
+        font-size: ${theme.fonts.sizes.h1};
+      }
+
+      p {
+        font-size: ${theme.fonts.sizes.large};
+      }
+
+      img {
+        display: block;
+      }
+    `}
+  `}
 `
