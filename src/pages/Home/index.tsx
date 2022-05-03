@@ -7,16 +7,19 @@ import { Container } from '../../components/Container'
 import { Header } from '../../components/Header'
 
 import NSNExample from '../../assets/example.png'
+import Monalisa from '../../assets/monalisa.png'
+
+import { Heading } from '../../components/Heading'
+import { Carousel } from '../../components/Carousel'
 
 import {
   CallToActionWrapper,
   Hero,
   HeroCircleWrapper,
   NextSection,
-  LastReleases
+  LastReleases,
+  HowWorks
 } from './styles'
-import { Heading } from '../../components/Heading'
-import { Carousel } from '../../components/Carousel'
 
 export const Home = () => (
   <>
@@ -63,6 +66,24 @@ export const Home = () => (
         <Carousel />
       </Container>
     </LastReleases>
+
+    <HowWorks>
+      <Container>
+        <div>
+          <Heading>Como funciona</Heading>
+          <p>
+            As arte são negociadas atráves de pontos obtidos nas lives do
+            @devlucaslopes.
+          </p>
+          <p>
+            A cada 10 minutos você ganha 5 bugcoins. As lives acontecem de
+            segunda a sexta de 08:00 ás 09:00.
+          </p>
+          <Button>Ver coleção</Button>
+        </div>
+        <img src={Monalisa} alt="A monalisa com a cara do @devlucaslopes" />
+      </Container>
+    </HowWorks>
 
     <footer>lorem</footer>
   </>

@@ -119,12 +119,50 @@ export const NextSection = styled.div`
   `}
 `
 
-export const LastReleases = styled.section`
+const Section = styled.section`
   ${({ theme }) => css`
     margin: ${theme.spacings.huge} 0;
 
     ${HeadingStyles.Title} {
       margin-bottom: ${theme.spacings.xlarge};
     }
+  `}
+`
+
+export const LastReleases = styled(Section)``
+
+export const HowWorks = styled(Section)`
+  ${({ theme }) => css`
+    ${HeadingStyles.Title} {
+      text-align: left;
+    }
+
+    ${ContainerStyles.Wrapper} {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: ${theme.spacings.xlarge};
+      font-size: ${theme.fonts.sizes.medium};
+    }
+
+    > div {
+      p + p {
+        margin-top: ${theme.spacings.medium};
+      }
+
+      a {
+        margin-top: ${theme.spacings.large};
+      }
+    }
+
+    ${media.greaterThan('large')`
+      ${ContainerStyles.Wrapper} {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    `}
   `}
 `
