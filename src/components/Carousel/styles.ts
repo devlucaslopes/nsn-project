@@ -1,6 +1,23 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
+export const Wrapper = styled.div`
+  ${({ theme }) => css`
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: ${theme.colors.primary['300']};
+    }
+
+    .swiper-button-next {
+      filter: drop-shadow(-8px 0px 4px #000);
+    }
+
+    .swiper-button-prev {
+      filter: drop-shadow(8px 0px 4px #000);
+    }
+  `}
+`
+
 interface SlideProps {
   backgroundURL: string
 }
@@ -19,6 +36,7 @@ export const Slide = styled.div<SlideProps>`
     span {
       position: relative;
       z-index: ${theme.layers.overlay};
+      margin-bottom: ${theme.spacings.normal};
     }
 
     &::after {
@@ -28,7 +46,7 @@ export const Slide = styled.div<SlideProps>`
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(1, 1, 1, 0.1);
+      background: rgba(1, 1, 1, 0.2);
     }
 
     ${media.greaterThan('large')`
