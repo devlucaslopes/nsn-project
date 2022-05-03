@@ -12,8 +12,11 @@ import {
   CallToActionWrapper,
   Hero,
   HeroCircleWrapper,
-  NextSection
+  NextSection,
+  LastReleases
 } from './styles'
+import { Heading } from '../../components/Heading'
+import { Carousel } from '../../components/Carousel'
 
 export const Home = () => (
   <>
@@ -53,14 +56,14 @@ export const Home = () => (
       </HeroCircleWrapper>
     </Hero>
 
-    <div>
-      <h1>Não é passado</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio est
-        dolorem impedit aut autem repellendus expedita distinctio officiis
-        laboriosam quod laudantium minima earum rerum hic itaque corporis eos,
-        enim mollitia?
-      </p>
-    </div>
+    <LastReleases>
+      <Container>
+        <Heading>Últimos lançamentos</Heading>
+
+        <Carousel />
+      </Container>
+    </LastReleases>
+
+    <footer>lorem</footer>
   </>
 )

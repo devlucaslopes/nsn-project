@@ -2,6 +2,7 @@ import styled, { css, keyframes } from 'styled-components'
 import media from 'styled-media-query'
 
 import * as ContainerStyles from '../../components/Container/styles'
+import * as HeadingStyles from '../../components/Heading/styles'
 
 export const Hero = styled.main`
   height: 100vh;
@@ -115,5 +116,15 @@ export const NextSection = styled.div`
     ${media.greaterThan('large')`
       display: none;
     `}
+  `}
+`
+
+export const LastReleases = styled.section`
+  ${({ theme }) => css`
+    margin: ${theme.spacings.huge} 0;
+
+    ${HeadingStyles.Title} {
+      margin-bottom: ${theme.spacings.xlarge};
+    }
   `}
 `
