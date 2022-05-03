@@ -5,13 +5,13 @@ import { Button } from '../../components/Button'
 import { Circle } from '../../components/Circle'
 import { Container } from '../../components/Container'
 import { Header } from '../../components/Header'
+import { Heading } from '../../components/Heading'
+import { Carousel } from '../../components/Carousel'
+import { Footer } from '../../components/Footer'
 
 import NSNExample from '../../assets/example.png'
 import Monalisa from '../../assets/monalisa.png'
 import Grito from '../../assets/grito.png'
-
-import { Heading } from '../../components/Heading'
-import { Carousel } from '../../components/Carousel'
 
 import {
   CallToActionWrapper,
@@ -106,6 +106,6 @@ export const Home = () => (
       </Container>
     </Presentation>
 
-    <footer>lorem</footer>
+    <Footer />
   </>
 )
