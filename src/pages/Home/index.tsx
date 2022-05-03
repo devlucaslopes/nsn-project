@@ -72,7 +72,9 @@ export const Home = () => (
     <HowWorks>
       <Container>
         <div>
-          <Heading color="primary">Como funciona</Heading>
+          <Heading color="primary" size="large">
+            Como funciona
+          </Heading>
           <p>
             As arte são negociadas atráves de pontos obtidos nas lives do
             @devlucaslopes.
@@ -91,7 +93,9 @@ export const Home = () => (
       <Container>
         <img src={Grito} alt="O Grito com a cara do @devlucaslopes" />
         <div>
-          <Heading color="primary">Quem é esse doido?</Heading>
+          <Heading color="primary" size="large">
+            Quem é esse doido?
+          </Heading>
           <p>
             Meu nome é Lucas, trabalho com desenvolvimento há mais de 6 anos.
           </p>
