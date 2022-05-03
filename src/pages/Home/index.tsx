@@ -8,6 +8,7 @@ import { Header } from '../../components/Header'
 
 import NSNExample from '../../assets/example.png'
 import Monalisa from '../../assets/monalisa.png'
+import Grito from '../../assets/grito.png'
 
 import { Heading } from '../../components/Heading'
 import { Carousel } from '../../components/Carousel'
@@ -18,7 +19,8 @@ import {
   HeroCircleWrapper,
   NextSection,
   LastReleases,
-  HowWorks
+  HowWorks,
+  Presentation
 } from './styles'
 
 export const Home = () => (
@@ -81,9 +83,28 @@ export const Home = () => (
           </p>
           <Button>Ver coleção</Button>
         </div>
-        <img src={Monalisa} alt="A monalisa com a cara do @devlucaslopes" />
+        <img src={Monalisa} alt="A Monalisa com a cara do @devlucaslopes" />
       </Container>
     </HowWorks>
+
+    <Presentation>
+      <Container>
+        <img src={Grito} alt="O Grito com a cara do @devlucaslopes" />
+        <div>
+          <Heading>Quem é esse doido?</Heading>
+          <p>
+            Meu nome é Lucas, trabalho com desenvolvimento há mais de 6 anos.
+          </p>
+          <p>
+            Comecei a fazer lives em Dezembro/2021 com o objetivo de ensinar
+            programação para TODAS as pessoas de uma forma divertida.
+          </p>
+          <p>Tem alguma dúvida? Me manda uma mensagem :)</p>
+
+          <Button>Ver coleção</Button>
+        </div>
+      </Container>
+    </Presentation>
 
     <footer>lorem</footer>
   </>

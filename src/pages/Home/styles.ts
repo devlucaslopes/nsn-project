@@ -166,3 +166,39 @@ export const HowWorks = styled(Section)`
     `}
   `}
 `
+
+export const Presentation = styled(Section)`
+  ${({ theme }) => css`
+    ${HeadingStyles.Title} {
+      text-align: left;
+    }
+
+    ${ContainerStyles.Wrapper} {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: ${theme.spacings.xlarge};
+      font-size: ${theme.fonts.sizes.medium};
+    }
+
+    > div {
+      p + p {
+        margin-top: ${theme.spacings.medium};
+      }
+
+      a {
+        margin-top: ${theme.spacings.large};
+      }
+    }
+
+    ${media.greaterThan('large')`
+      ${ContainerStyles.Wrapper} {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    `}
+  `}
+`
