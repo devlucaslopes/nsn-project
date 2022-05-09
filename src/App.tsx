@@ -1,3 +1,3 @@
-import { Home } from './pages/Home'
+import { Router } from './routes'
 
-export const App = () => <Home />
+export const App = () => <Router />
