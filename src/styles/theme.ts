@@ -33,6 +33,7 @@ export const theme = {
     }
   },
   spacings: {
+    small: '1.2rem',
     normal: '1.6rem',
     medium: '1.8rem',
     large: '2.4rem',
