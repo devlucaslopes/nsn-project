@@ -1,4 +1,5 @@
 import { FiMenu } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 import { Button } from '../Button'
 import { Logo } from '../Logo'
@@ -25,7 +26,7 @@ export const Header = () => {
             <a href="#">Quem é esse doido?</a>
           </li>
           <li>
-            <a href="#">Lojinha</a>
+            <Link to="lojinha">Lojinha</Link>
           </li>
         </ul>
 

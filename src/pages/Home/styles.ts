@@ -28,6 +28,7 @@ export const HeroCircleWrapper = styled.div`
   left: -30%;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
 
   ${media.greaterThan('large')`
     position: absolute;
