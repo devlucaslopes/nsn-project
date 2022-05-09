@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -12,6 +13,10 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: ${theme.spacings.normal};
+
+    ${media.greaterThan('medium')`
+      grid-template-columns: repeat(4, 1fr);
+    `}
   `}
 `
 
@@ -21,11 +26,19 @@ export const NSNPreview = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: ${theme.spacings.normal};
+      margin-top: ${theme.spacings.small};
 
       span {
+        display: flex;
+        align-items: center;
         font-size: ${theme.fonts.sizes.medium};
         font-family: ${theme.fonts.family.headings};
+      }
+
+      svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
       }
     }
   `}
