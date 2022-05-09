@@ -4,12 +4,6 @@ import media from 'styled-media-query'
 import * as ContainerStyles from '../../components/Container/styles'
 import * as HeadingStyles from '../../components/Heading/styles'
 
-export const Hero = styled.main`
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-`
-
 const fadeIn = keyframes`
   0% {
     fill-opacity: 0.1;

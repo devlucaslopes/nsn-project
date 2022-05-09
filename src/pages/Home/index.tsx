@@ -1,6 +1,5 @@
 import { FiChevronDown } from 'react-icons/fi'
 
-import { BackgroundGrid } from '../../components/BackgroundGrid'
 import { Button } from '../../components/Button'
 import { Circle } from '../../components/Circle'
 import { Container } from '../../components/Container'
@@ -15,19 +14,17 @@ import Grito from '../../assets/grito.png'
 
 import {
   CallToActionWrapper,
-  Hero,
   HeroCircleWrapper,
   NextSection,
   LastReleases,
   HowWorks,
   Presentation
 } from './styles'
+import { HeroSection } from '../../components/HeroSection'
 
 export const Home = () => (
   <>
-    <Hero>
-      <BackgroundGrid />
-
+    <HeroSection>
       <NextSection>
         <a href="">
           <span>Últimos lançamentos</span>
@@ -59,7 +56,7 @@ export const Home = () => (
       <HeroCircleWrapper>
         <Circle />
       </HeroCircleWrapper>
-    </Hero>
+    </HeroSection>
 
     <LastReleases>
       <Container>
