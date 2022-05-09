@@ -3,11 +3,11 @@ import { Footer } from '../../components/Footer'
 import { Header } from '../../components/Header'
 import { Heading } from '../../components/Heading'
 import { HeroSection } from '../../components/HeroSection'
-import { IconBugcoins } from '../../components/IconBugcoins'
 
 import NSNExample from '../../assets/monalisa.png'
 
-import { Grid, NSNPreview, Wrapper } from './styles'
+import { Grid, Wrapper } from './styles'
+import { NSNPreview } from '../../components/NSNPreview'
 
 export const Store = () => (
   <>
@@ -23,35 +23,9 @@ export const Store = () => (
           </Heading>
 
           <Grid>
-            <NSNPreview>
-              <img src={NSNExample} />
-              <div>
-                <span>NSN#333</span>
-                <span>
-                  <IconBugcoins /> 1K
-                </span>
-              </div>
-            </NSNPreview>
-
-            <NSNPreview>
-              <img src={NSNExample} />
-              <div>
-                <span>NSN#333</span>
-                <span>
-                  <IconBugcoins /> 1K
-                </span>
-              </div>
-            </NSNPreview>
-
-            <NSNPreview>
-              <img src={NSNExample} />
-              <div>
-                <span>NSN#333</span>
-                <span>
-                  <IconBugcoins /> 1K
-                </span>
-              </div>
-            </NSNPreview>
+            <NSNPreview name="333" price="1" image={NSNExample} />
+            <NSNPreview name="888" price="2" image={NSNExample} />
+            <NSNPreview name="999" price="0.5" image={NSNExample} />
           </Grid>
         </Container>
       </Wrapper>
