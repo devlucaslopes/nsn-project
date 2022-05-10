@@ -34,5 +34,9 @@ export const Wrapper = styled.div`
         margin-right: 0.8rem;
       }
     }
+
+    p {
+      margin-top: ${theme.spacings.normal};
+    }
   `}
 `

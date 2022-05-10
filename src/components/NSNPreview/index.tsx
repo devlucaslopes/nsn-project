@@ -6,9 +6,15 @@ interface NSNPreviewProps {
   name: string
   price: string
   image: string
+  description?: string
 }
 
-export const NSNPreview = ({ name, price, image }: NSNPreviewProps) => {
+export const NSNPreview = ({
+  name,
+  price,
+  image,
+  description
+}: NSNPreviewProps) => {
   return (
     <Link to={`nsn-${name}`}>
       <Wrapper>
@@ -19,6 +25,8 @@ export const NSNPreview = ({ name, price, image }: NSNPreviewProps) => {
             <IconBugcoins /> {`${price}K`}
           </span>
         </div>
+
+        {description && <p>{description}</p>}
       </Wrapper>
     </Link>
   )
