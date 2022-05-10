@@ -42,5 +42,9 @@ export const GlobalStyles = createGlobalStyle`
       text-decoration: none;
       color: ${theme.colors.white};
     }
+
+    button {
+      cursor: pointer;
+    }
   `}
 `
