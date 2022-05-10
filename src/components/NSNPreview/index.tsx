@@ -10,7 +10,7 @@ interface NSNPreviewProps {
 
 export const NSNPreview = ({ name, price, image }: NSNPreviewProps) => {
   return (
-    <Link to="/nsn-3333">
+    <Link to={`nsn-${name}`}>
       <Wrapper>
         <img src={image} />
         <div>
