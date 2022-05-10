@@ -1,4 +1,17 @@
 import styled, { css } from 'styled-components'
+import { Link as LinkRouter } from 'react-router-dom'
+
+export const Link = styled(LinkRouter)`
+  img {
+    transition: filter 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      filter: brightness(0.5);
+    }
+  }
+`
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`

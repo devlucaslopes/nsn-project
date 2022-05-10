@@ -1,6 +1,6 @@
 import { IconBugcoins } from '../IconBugcoins'
 
-import { Wrapper } from './styles'
+import { Wrapper, Link } from './styles'
 
 interface NSNPreviewProps {
   name: string
@@ -10,14 +10,16 @@ interface NSNPreviewProps {
 
 export const NSNPreview = ({ name, price, image }: NSNPreviewProps) => {
   return (
-    <Wrapper>
-      <img src={image} />
-      <div>
-        <span>{`NSN#${name}`}</span>
-        <span>
-          <IconBugcoins /> {`${price}K`}
-        </span>
-      </div>
-    </Wrapper>
+    <Link to="/nsn-3333">
+      <Wrapper>
+        <img src={image} />
+        <div>
+          <span>{`NSN#${name}`}</span>
+          <span>
+            <IconBugcoins /> {`${price}K`}
+          </span>
+        </div>
+      </Wrapper>
+    </Link>
   )
 }
