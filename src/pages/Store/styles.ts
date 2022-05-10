@@ -15,6 +15,10 @@ export const Grid = styled.div`
     gap: ${theme.spacings.normal};
 
     ${media.greaterThan('medium')`
+      grid-template-columns: repeat(3, 1fr);
+    `}
+
+    ${media.greaterThan('large')`
       grid-template-columns: repeat(4, 1fr);
     `}
   `}
