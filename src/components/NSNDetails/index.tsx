@@ -16,22 +16,30 @@ export const NSNDetails = ({
   image,
   description
 }: NSNDetailsProps) => {
+  const handleDialog = () => {
+    alert('Dialog')
+  }
+
   return (
-    <Wrapper>
-      <img src={image} />
+    <>
+      <Wrapper>
+        <img src={image} />
 
-      <div>
-        <NameAndPrice>
-          <span>{`NSN#${name}`}</span>
-          <span>
-            <IconBugcoins /> {`${price}K`}
-          </span>
-        </NameAndPrice>
+        <div>
+          <NameAndPrice>
+            <span>{`NSN#${name}`}</span>
+            <span>
+              <IconBugcoins /> {`${price}K`}
+            </span>
+          </NameAndPrice>
 
-        {description && <p>{description}</p>}
+          {description && <p>{description}</p>}
 
-        <Button>Comprar agora</Button>
-      </div>
-    </Wrapper>
+          <Button as="button" type="button" onClick={handleDialog}>
+            Comprar agora
+          </Button>
+        </div>
+      </Wrapper>
+    </>
   )
 }

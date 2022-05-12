@@ -5,6 +5,7 @@ import { NSNDetails } from '../../components/NSNDetails'
 import NSNExample from '../../assets/monalisa.png'
 
 import { Content, Wrapper } from './styles'
+import { Dialog } from '../../components/Dialog'
 
 export const NSN = () => (
   <Wrapper>
@@ -23,5 +24,7 @@ export const NSN = () => (
         />
       </Content>
     </Container>
+
+    <Dialog />
   </Wrapper>
 )
