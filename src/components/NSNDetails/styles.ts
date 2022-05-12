@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     p {
-      margin-top: ${theme.spacings.normal};
+      margin: ${theme.spacings.normal} 0;
     }
 
     ${media.greaterThan('large')`
