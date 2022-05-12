@@ -6,25 +6,31 @@ import NSNExample from '../../assets/monalisa.png'
 
 import { Content, Wrapper } from './styles'
 import { Dialog } from '../../components/Dialog'
+import { useDialog } from '../../hooks/useDialog'
 
-export const NSN = () => (
-  <Wrapper>
-    <Container>
-      <Header />
-    </Container>
+export const NSN = () => {
+  const { isOpen, toggleDialog } = useDialog()
 
-    <Container>
-      <Content>
-        <NSNDetails
-          name="333"
-          price="1"
-          image={NSNExample}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          hendrerit ipsum a mauris pretium accumsan."
-        />
-      </Content>
-    </Container>
+  return (
+    <Wrapper>
+      <Container>
+        <Header />
+      </Container>
 
-    <Dialog />
-  </Wrapper>
-)
+      <Container>
+        <Content>
+          <NSNDetails
+            name="333"
+            price="1"
+            image={NSNExample}
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            hendrerit ipsum a mauris pretium accumsan."
+            toggleDialog={toggleDialog}
+          />
+        </Content>
+      </Container>
+
+      {isOpen && <Dialog />}
+    </Wrapper>
+  )
+}

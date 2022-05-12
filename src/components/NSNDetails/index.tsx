@@ -8,18 +8,16 @@ interface NSNDetailsProps {
   price: string
   image: string
   description?: string
+  toggleDialog: () => void
 }
 
 export const NSNDetails = ({
   name,
   price,
   image,
-  description
+  description,
+  toggleDialog
 }: NSNDetailsProps) => {
-  const handleDialog = () => {
-    alert('Dialog')
-  }
-
   return (
     <>
       <Wrapper>
@@ -35,7 +33,7 @@ export const NSNDetails = ({
 
           {description && <p>{description}</p>}
 
-          <Button as="button" type="button" onClick={handleDialog}>
+          <Button as="button" type="button" onClick={toggleDialog}>
             Comprar agora
           </Button>
         </div>

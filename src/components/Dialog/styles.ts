@@ -15,6 +15,7 @@ export const Overlay = styled.div`
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
+    max-width: ${theme.container};
     flex: 1;
     padding: ${theme.spacings.xlarge};
     background: ${theme.colors.white};
