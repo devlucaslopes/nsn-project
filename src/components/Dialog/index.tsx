@@ -16,7 +16,7 @@ export const Dialog = () => {
           Comprar
         </Button>
 
-        <Button as="button" type="button">
+        <Button as="button" type="button" variant="outline">
           Cancelar
         </Button>
       </Wrapper>
